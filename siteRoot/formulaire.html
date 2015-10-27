@@ -9,7 +9,58 @@
 			  method="post" 
 			  enctype="multipart/form-data"
 		>
-			<input type="file"/>
+			<datalist id="countryList">
+				<option value="france">France</option>
+				<option value="allemagne">Allemagne</option>
+			</datalist>
+			<label for="countryField">Pays</label>
+			<input id="countryField" name="country" list="countryList"/> 
+			
+			<label for="titleField">Titre</label>
+			<select name="title" id="titleField">
+				<option disabled selected>--</option>				
+				<option value="1">Monsieur</option>
+				<option value="2">Madame</option>
+			</select>
+			
+			
+			<label for="nameField">Nom</label>
+			<input id="nameField" 
+				   name="name"
+			       type="text" 
+				   placeholder="Lettre sans accents..." 
+				   required="" 
+				   pattern="[a-zA-Z ]+"
+			/>
+			
+			<label for="ageField">Age</label>
+			<input id="ageField"
+				   name="age"
+				   type="number" 
+				   min="0"
+				   max="150" 
+				   step="5"
+			/>
+			
+			<fieldset>
+				<p>Etes-vous d'accord ?</p>
+				<label for="agreeYesField">Oui</label>
+				<input id="agreeYesField" 
+				   	   type="radio"
+					   name="agree"	  
+					   value="Y"	  
+				/>
+				<label for="agreeNoField">Non</label>
+				<input id="agreeNoField" 
+				   	   type="radio"
+					   name="agree"	
+   					   value="N"	    
+				/>
+			</fieldset>
+			
+			<label for="descriptionField">Description</label>
+			<textarea name="description" id="descriptionField" cols="100" rows="5"></textarea>
+			<!-- <input type="file"/> -->
 		</form>
 	</body>
 </html>
