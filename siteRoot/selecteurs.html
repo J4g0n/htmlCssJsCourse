@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>TWB011</title>
+		
+		<style>
+			ul li:nth-child(2n) {
+				color: green;
+			}
+			ul li:nth-child(2n + 1) {
+				color: blue;
+			}
+			ul li:first-child {
+				color: red;
+			}
+			ul li:last-child {
+				color: purple;
+			}
+			
+			input:focus {
+				background-color:grey;
+			}
+			
+			a:active {
+				color: grey;
+			}
+			a:visited {
+				color: pink;
+			}
+			
+			p::before, p::after {
+				content: "@@";
+				display: inline-block;
+				width: 50px;
+				line-height: 20px;
+				text-align: center;
+				background-color: darkorange;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Hello World!</p>
+		
+		<ul>
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+			<li>G</li>
+		</ul>
+		
+		<input type="text"/>
+		<a href="http://www.47deg.com/blog/scala-development-with-emacs">Click here!</a>
+	</body>
+</html>
