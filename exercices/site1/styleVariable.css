@@ -1,13 +1,4 @@
-body {
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
-}
-
-h1 {
-	font-size: 35px;
-	text-align: center;
-}
+@import url("normalize.css");
 
 h2 {
 	font-size: 20px;
@@ -15,14 +6,17 @@ h2 {
 }
 
 header#page-title {
-	padding: 0 25%;
-	height: 50px;
-	line-height: 50px;
+	font-size: 50px;
+	text-align: center;
+	padding: 0 35%;
+	height: 100px;
+	line-height: 100px;
 	background-color: grey;
 	text-align: center;
 }
 header#page-title img {
 	float: left;
+	margin-top: 25px;
 	height: 50px;
 	width: 50px;
 }
@@ -43,7 +37,9 @@ nav ul li {
 
 main {
 	position: relative;
+	background: linear-gradient(to left, slategrey 33%, white 33%);
 	min-height: 500px;
+	overflow: hidden;
 }
 main article {
 	float: left;
@@ -57,13 +53,12 @@ main article header {
 }
 main article img {
 	float: left;
+	height: 200px;
 }
 main aside {
-	background-color: slategrey;
-	float: left;
 	display: inline-block;
 	width: 33%;
-	height: 100%;
+	float: right;
 }
 main aside header {
 	background-color: lightgrey;
@@ -96,6 +91,6 @@ footer {
 	clear: both;
 }
 footer img {
-	display: inlint-block;
-	height: 20px;
+	display: inline-block;
+	height: 15px;
 }
