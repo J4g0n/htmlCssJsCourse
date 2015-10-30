@@ -2,8 +2,8 @@
 
 body {
     width: 800px;
-    margin: 0 auto;
-    font-weight: 200;
+    margin: 10px auto 50px auto;
+    font-weight: 500;
     color: #333333;
 }
 
@@ -12,15 +12,18 @@ h1 {
     color: #999999;
     font-size: 30px;
     line-height: 80px;
+    font-weight: 400;
     border-bottom: 2px solid #eeeeee;
 }
 h1 b {
+    font-weight: 400;
     color: #333333;
 }
 h2 {
     margin: 0;
-    font-size: 40px;
-    line-height: 80px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
 }
 h3 {
     margin: 0 0 10px 0;
@@ -35,7 +38,7 @@ h3 {
     margin-top: 20px;
     font-size: 17px;
     line-height: 25px;
-    padding: 0 70px 50px 70px;
+    padding: 20px 70px 50px 70px;
     background-color: #eeeeee;
     border-radius: 3px;
 }
@@ -71,7 +74,7 @@ h3 {
 }
 .content section p {
     margin: 15px 0 0;
-    padding: 50px 70px;
+    padding: 35px 70px;
     font-size: 17px;
     line-height: 25px;
     background-color: #eeeeee;
@@ -95,5 +98,10 @@ h3 {
 }
 .content-testimonial q::after {
     content: '”';
+}
+
+.content-contacts {
+    font-size: 15px;
+    line-height: 25px;
 }
 
