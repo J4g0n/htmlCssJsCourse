@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@import url("normalize.css");
+
+html
+{
+    font-size: 10px;
+}
+
+body
+{
+    font-size: 1.2em; /* L'unité rem ne fonctionne pas correctement dans Chrome pour l'élément body */
+}
+
+h1
+{
+    font-family: serif;
+}
+
+.table
+{
+    display: table;
+    width: 100%;
+}
+
+.table-row
+{
+    display: table-row;
+    width: 100%;
+}
+
+.table-cell
+{
+    display: table-cell;
+}
+
+.button
+{
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 30px;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.button.light-theme
+{
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 237, 237);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(219, 219, 219));
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.button.dark-theme
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 38, 38);
+    background-image: linear-gradient(to bottom, rgb(43, 43, 43), rgb(34, 34, 34));
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/* Cadre */
+
+#site-frame
+{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/* En-tête */
+
+#site-header
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 183, 31);
+    background-image: linear-gradient(to bottom, rgb(250, 203, 47), rgb(246, 162, 14));
+}
+
+#site-title, #site-header .phone-number
+{
+    box-sizing: border-box;
+    line-height: 90px;
+}
+
+#site-title
+{
+    font-size: 3rem;
+    padding-left: 62px;
+}
+
+#site-header .phone-number
+{
+    color: rgb(0, 0, 0);
+    background: url("images/phone-icon.png") no-repeat 48% center;
+    font-size: 2.5rem;
+    text-align: right;
+    padding-right: 64px;
+}
+
+/* Menu */
+
+#main-menu > ul
+{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+#main-menu > ul > li
+{
+    border-left: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: rgb(43, 43, 43);
+    display: table-cell;
+    line-height: 48px;
+    text-align: center;
+    width: 192px;
+}
+
+#main-menu > ul > li:first-child
+{
+    background: rgb(43, 43, 43) url("images/home-icon.png") no-repeat center center;
+    border-left: none;
+    text-indent: 100%;
+    overflow: hidden;
+    width: 60px;
+}
+
+#main-menu > ul > li.selected, #main-menu > ul > li:hover
+{
+    background-color: rgb(34, 34, 34);
+}
+
+#main-menu a
+{
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Contenu */
+
+main
+{
+    margin-bottom: 21px;
+    font-size: 1.4rem;
+}
+
+main ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+main li
+{
+    background: url("images/list-item.png") no-repeat 0 center ;
+    padding-left: 22px;
+}
+
+#services-introduction, #services-list
+{
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 30px 40px 30px;
+    line-height: 1.8em;
+}
+
+#services-introduction
+{
+    width: 694px;
+}
+
+#services-list
+{
+    width: 326px;
+}
+
+#services-introduction > h1, #services-list > h1
+{
+    margin-top: 0;
+}
+
+#services-introduction img
+{
+    float: left;
+    margin: 0 21px 21px 0;
+}
+
+#services-introduction > .button
+{
+    width: 152px;
+}
+
+#services-list a
+{
+    color: inherit;
+}
+
+#services-categories
+{
+    clear: left;
+    overflow: hidden;
+}
+
+.services-box
+{
+    float: left;
+    color: rgb(255, 255, 255);
+    background: rgb(34, 34, 34);
+    box-sizing: border-box;
+    width: 326px;
+}
+
+.services-box:not(:first-child)
+{
+    margin-left: 21px;
+}
+
+.services-box > h1
+{
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 183, 31);
+    background-image: linear-gradient(to bottom, rgb(250, 203, 47), rgb(246, 162, 14));
+    margin: 0 0 25px 0;
+    line-height: 58px;
+    text-align: center;
+}
+
+.services-box > img
+{
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.services-box > p
+{
+    margin: 10px 30px;
+}
+
+.services-box > p:first-of-type
+{
+    font-weight: bold;
+}
+
+.services-box > .button
+{
+    margin: 24px auto;
+    width: 166px;
+}
+
+/* Pied de page */
+
+#site-footer
+{
+    clear: left;
+}
+
+#site-footer > p
+{
+    color: rgb(255, 255, 255);
+    background: rgb(43, 43, 43);
+    margin: 0;
+    line-height: 45px;
+    text-align: center;
+}
