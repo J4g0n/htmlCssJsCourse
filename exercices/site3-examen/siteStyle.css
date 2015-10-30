@@ -72,6 +72,10 @@ h3 {
     width: 100%;
     padding: 0 30px;
 }
+.content-work li a {
+    text-decoration: underline;
+    color: #999999;
+}
 .content section p {
     margin: 15px 0 0;
     padding: 35px 70px;
