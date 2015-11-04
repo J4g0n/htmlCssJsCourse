@@ -1,5 +1,23 @@
 var max = function (x) {
-    var max = x;
+    // Fail case at first makes error handler to be indented ~ preconditions
+    if (arguments.length < 2) {
+        throw new Error("max()  must be invoked with at least two arguments");
+    }
+
+    // definitive version (see also apply)
+    return Array.prototype.reduce.call(arguments, function (acc, nb) {
+        return acc < nb ? nb : acc;
+    }, arguments[0]);
+
+    // Mixin yeah don't forget this object must have some properties
+    /*arguments.reduce = Array.prototype.reduce;
+
+    return arguments.reduce(function (acc, nb) {
+        return acc < nb ? nb : acc;
+    }, arguments[0]);*/
+
+    // Normal case
+    /*var max = x;
 
     for (var nb in arguments) {
         if (arguments[nb] > max) {
@@ -7,7 +25,7 @@ var max = function (x) {
         }
     }
 
-    return max;
+    return max;*/
 };
 
 var nb = parseInt(prompt("Saisir un nombre."));
