@@ -152,6 +152,17 @@ var game = (function () {
     });
 
     endButton.addEventListener("click", function () {
-        // Do something
+        game.resetBoard();
+        player1.value = "";
+        player2.value = "";
+        player1Score.innerHTML = "0";
+        player2Score.innerHTML = "0";
+
+        Array.prototype.forEach.call(boardCells, function (cell) {
+            cell.innerHTML = "_";
+        });
+
+        gameOverNode.classList.add("hide");
+        formNode.classList.remove("hide");
     });
 })();

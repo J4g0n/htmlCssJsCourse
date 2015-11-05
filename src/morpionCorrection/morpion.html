@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Morpion</title>
+        <link rel="stylesheet" href="morpion.css" />
+        <script defer src="morpion.js" ></script>
+    </head>
+    <body>
+        <div id="site-frame" >
+            <header>
+                <h1>Morpion</h1>
+            </header>
+            <main>
+                <section id="ecran-titre" class="ecran" >
+                    <form>
+                        <div class="form-field" >
+                            <label for="champ-joueur1" >Joueur 1</label>
+                            <input id="champ-joueur1" />
+                        </div>
+                        <div class="form-field" >
+                            <label for="champ-joueur2" >Joueur 2</label>
+                            <input id="champ-joueur2" />
+                        </div>
+                        <div class="form-buttons" >
+                            <button id="bouton-commencer" type="button" >Commencer</button>
+                        </div>
+                    </form>
+                </section>
+                <section id="ecran-plateau" class="ecran is-hidden" >
+                    <p>
+                        <span id="nom-joueur1" ></span>
+                        : <span id="score-joueur1" ></span> -
+                        <span id="score-joueur2" ></span> :
+                        <span id="nom-joueur2" ></span>
+                    </p>
+                    <table id="plateau" >
+                        <tbody>
+                            <tr>
+                                <td id="c1" ></td>
+                                <td id="c2" ></td>
+                                <td id="c3" ></td>
+                            </tr>
+                            <tr>
+                                <td id="c4" ></td>
+                                <td id="c5" ></td>
+                                <td id="c6" ></td>
+                            </tr>
+                            <tr>
+                                <td id="c7" ></td>
+                                <td id="c8" ></td>
+                                <td id="c9" ></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="ecran-fin" class="ecran is-hidden" >
+                    <p id="message-victoire" class="message" >
+                        Victoire de <span id="nom-vainqueur" ></span>
+                    </p>
+                    <p id="message-egalite" class="message" >
+                        Égalité !
+                    </p>
+                    <form>
+                        <div class="form-buttons" >
+                            <button id="bouton-continuer" type="button" >Continuer</button>
+                            <button id="bouton-fin" type="button" >Fin</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                © 2015 Morpion Inc.
+            </footer>
+        </div>
+    </body>
+</html>
