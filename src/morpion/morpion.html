@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Morpion</title>
+        <!-- don't forget defer on that script -->
+        <script src="morpion.js" defer></script>
+        <link rel="stylesheet" href="morpion.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Morpion</h1>
+        </header>
+        <main>
+            <div id="form">
+                <form action="">
+                    <label for="player1">Joueur 1:</label>
+                    <input type="text" id="player1"/>
+                    <label for="player2">Joueur 2:</label>
+                    <input type="text" id="player2"/>
+                    <button id="play" type="button"> Jouer </button>
+                </form>
+            </div>
+            <div id="board" class="hide">
+                <div id="score">
+                    <i id="player1-name"></i> : <b id="player1-score"> 0 </b> -- <i id="player2-name"></i> : <b id="player2-score"> 0 </b>
+                </div>
+                <table id="tictactoe-board">
+                    <tbody>
+                        <tr>
+                            <td data-row="0" data-col="0">_</td>
+                            <td data-row="0" data-col="1">_</td>
+                            <td data-row="0" data-col="2">_</td>
+                        </tr>
+                        <tr>
+                            <td data-row="1" data-col="0">_</td>
+                            <td data-row="1" data-col="1">_</td>
+                            <td data-row="1" data-col="2">_</td>
+                        </tr>
+                        <tr>
+                            <td data-row="2" data-col="0">_</td>
+                            <td data-row="2" data-col="1">_</td>
+                            <td data-row="2" data-col="2">_</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="game-over" class="hide">
+                <span id="winner-name"></span> remporte le point
+                <button id="continue-button">Continuer</button>
+                <button id="end-button">Fin</button>
+            </div>
+        </main>
+    </body>
+</html>

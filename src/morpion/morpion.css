@@ -1,0 +1,21 @@
+.hide {
+    display: none;
+}
+
+#form {
+
+}
+
+#board td {
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid grey;
+}
+
+#game-over {
+
+}
