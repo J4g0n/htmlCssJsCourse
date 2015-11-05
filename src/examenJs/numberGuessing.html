@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Morpion</title>
+    <!-- don't forget defer on that script -->
+    <script src="numberGuessing.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Devine ...</h1>
+    </header>
+    <main>
+        <form action="">
+            <input type="text" id="proposed-number"/>
+            <button type="button" id="propose-button">Proposer</button>
+            <button type="button" id="retry-button">Recommencer</button>
+        </form>
+        <section>
+            Essais restants: <span id="left-try">3</span>
+        </section>
+        <section>
+            <ul id="hints">
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
